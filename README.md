@@ -1,8 +1,10 @@
-# OrderService – Mockito og indirekte input
+# Unit test af OrderService 
 
-Java 21 Maven-projekt til IntelliJ med JUnit 5 og Mockito.
+Vi vil unit teste metoden `calculateFinalPrice` i `OrderService` klassen.
+Indirekte input fra `DiscountPolicy` mockes med Mockito
 
-`customer` og `orderAmount` er direkte input til `calculateFinalPrice`.
+Metodens parametre `customer` og `orderAmount` er direkte input til `calculateFinalPrice`.
+
 Rabatten er indirekte input, fordi `OrderService` får den fra `DiscountPolicy`.
 I testen mockes `DiscountPolicy`; den rigtige `OrderService` testes.
 
